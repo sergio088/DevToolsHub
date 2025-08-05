@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss",
+        "usernamehw.errorlens",
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github"
+    ]
+}
