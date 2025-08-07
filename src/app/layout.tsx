@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased bg-gray-600 font-[Verdana]`}
+        className={`antialiased bg-neutral-600 font-[Verdana]`}
       >
         {children}
       </body>
