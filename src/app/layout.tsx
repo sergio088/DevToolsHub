@@ -3,8 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DevToolsHub",
-  description: "Salve ferramentas úteis como, extensões, APIs, bibliotecas, geradores, etc.",
-  keywords: "DevToolsHub, Salvamento de ferramentas, API, extensões"
+  description:
+    "Salve ferramentas úteis como, extensões, APIs, bibliotecas, geradores, etc.",
+  keywords: "DevToolsHub, Salvamento de ferramentas, API, extensões",
 };
 
 export default function RootLayout({
@@ -14,11 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`antialiased bg-gray-600 font-[Verdana]`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
