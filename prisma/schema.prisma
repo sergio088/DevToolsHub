@@ -1,0 +1,24 @@
+// Define o provedor e a URL do banco de dados
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Configura o gerador do Prisma Client
+generator client {
+  provider = "native-client"
+}
+
+
+// --- Schema Inicial ---
+
+// Modelo para a tabela de Usuários (nossa única tabela por enquanto)
+model User {
+  id        String   @id @default(cuid()) // Chave primária, ID único e seguro
+  email     String   @unique             // O email de cada usuário deve ser único
+  name      String                       
+  password  String                       
+
+  createdAt DateTime @default(now())      // Data de criação do registro, preenchida automaticamente
+  updatedAt DateTime @updatedAt           // Data da última atualização, gerenciada pelo Prisma
+}

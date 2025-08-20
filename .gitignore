@@ -36,3 +36,4 @@ Thumbs.db
 
 # sistema do Next.js (para preview mode)
 .vercel
+/src/generated/prisma
